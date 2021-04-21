@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "mocha --reporter spec --require ts-node/register test/**/*.ts"
+    "test": "mocha --reporter spec --require ts-node/register test/**/*.ts",
+    "postinstall": "tsc --outDir ./build"
   },
   "repository": {
     "type": "git",
